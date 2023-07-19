@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dhanush Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 20px;
+      align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    position: relative;
+    transition: 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav li a.active{
+      color: #ff004f;
+      width: 100%;
+    }
+
+    nav li a.action::after
+    nav ul li a:hover::after{
+      content: "";
+      width: 0;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+    nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ }
+nav ul li a:hover::after{
+    width: 100%;
+} 
+
+    main {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-top: 20%;
+      margin-top: 7%;
+      display: none; 
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+    #home img{
+      display: flex;
+      justify-content: space-around;
+      padding: 50px;
+      margin-top: -50px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff; 
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+#home .header-text{
+  font-size: 20px;
+}
+#home .header-text p{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30px;
+}
+#home .header-text p span{
+  color: #ff004f;
+}
+.header-text{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+#about{
+  margin-top: 20%;
+}
+#projects{
+  margin-top: 20%;
+}
+#contact{
+  margin-top: 20%;
+  margin-left: 18%;
+  font-size: large;
+
+}
+#fu{
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+#fu a {
+      font-size: larger;
+      display: flex;
+      justify-content: space-between;
+}
+#fu p{
+      padding-left: 10px;
+      padding-bottom: 10px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a  href="#about" class="nav-link">About</a></li>
+        <li><a  href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="header-text">
+        <p>Hi, I'm <span>Dhanush Dharaneesh</span><br>
+          Pursuing B.E.CSE<br>
+          Sri Eshwar College of Engineering<br>
+      </p>
+        <img src="/poto/IMG-20210304-WA00133.jpg" alt="dhanush's photo">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Dhanush! I am a passionate web developer with a strong
+        interest in creating beautiful and functional websites. I have
+        several years of experience working with HTML, CSS, and JavaScript,
+        and I enjoy learning new technologies to expand my skillset.
+      </p>
+      <p>
+        My goal is to develop user-friendly and responsive web solutions
+        that meet the needs of clients and provide a seamless browsing
+        experience. I love collaborating with others and bringing creative
+        ideas to life through coding.
+      </p>
+      <p>
+        When I'm not coding, you can find me exploring the great outdoors,
+        playing the guitar, or indulging in a good book. Feel free to
+        contact me if you have any questions or if you'd like to work
+        together on a project.
+      </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>Zomato Website Redesign</h3>
+            <p>A complete redesign of Zomato's website to enhance user experience and improve aesthetics. Implemented modern UI/UX principles, optimized performance, and ensured responsiveness across devices.</p>
+          </li>
+          <li>
+            <h3>Lapinfo E-commerce Store</h3>
+            <p>Developed an e-commerce website for Lapinfo, a leading electronics brand. Implemented product catalog, shopping cart functionality, and secure payment processing, providing a seamless online shopping experience.</p>
+          </li>
+        </ul>
+      </section>
+      
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><b>You can reach me at: </b><a href="mailto:your-email@example.com">dhanushdharaneesh.m2021csea@sece.ac.in</a></p>
+    <div id="fu"><a href="https://www.linkedin.com/" class="svgs">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#00000" width="50" height="50" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        <p>linkedin : https://www.linkedin.com/in/</p>
+    </a></div>
+    <div id="fu"><a href="https://www.github.com/" class="svgs">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#00000" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <p>Github link : https://github.com/</p>
+    </a></div>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 Dhanush's Portfolio. All rights reserved.
+  </footer>
+
+  <script>
+    const anchorLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    anchorLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+
+        
+        anchorLinks.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+
+        
+        sections.forEach(section => {
+          if (section.id === link.getAttribute('href').slice(1)) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

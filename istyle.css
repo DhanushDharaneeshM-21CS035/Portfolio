@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+
+  }
+
+  nav {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+    margin: 10px 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ }
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+  margin-top: 25%;
+  font-size: 30px;
+}
+.header-text p{
+  font-size: 40px;
+  margin-top: 20px;
+}
+.header-text p span{
+  color: #ff004f;
+}
+
+  section {
+    margin-bottom: 40px;
+    display: none; /* Hide all sections by default */
+  }
+
+  #projects {
+    margin-top: 25%;
+    display: none; /* Hide all sections by default */
+  }
+  #projects .items{
+      border: 2px;
+      padding: 30px;
+      background-color: red;
+  }
+  .items:hover{
+      background-color: aqua;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+ .services-list{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+ }
+ .services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+ }
+ .services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+ .services-list div:hover{
+    background: #ff004f;
+    transform: translate(-10px);
+ }
